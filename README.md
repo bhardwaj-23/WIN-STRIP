@@ -28,5 +28,5 @@ Before running this script, you **MUST** manually disable Tamper Protection in t
 Open an elevated PowerShell window (Run as Administrator) and paste the following command to download and execute the script directly in memory:
 
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; $w=New-Object Net.WebClient; $w.Encoding=[System.Text.Encoding]::UTF8; iex $w.DownloadString("http://192.168.1.21/Disable-Security.ps1")
+Set-ExecutionPolicy Bypass -Scope Process -Force; $w=New-Object Net.WebClient; $w.Encoding=[System.Text.Encoding]::UTF8; iex $w.DownloadString("https://raw.githubusercontent.com/bhardwaj-23/WIN-STRIP/main/WIN-STRIP.ps1")
 ```
