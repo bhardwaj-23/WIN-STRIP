@@ -17,7 +17,7 @@ By administratively overriding default security protocols, WIN-STRIP permanently
 
 ## Prerequisites
 
-Before running this script, you **MUST** manually disable Tamper Protection in the Windows Security settings, otherwise, Windows will block the registry modifications.
+Before running this script, you **MUST** manually disable `Tamper Protection` in the Windows Security settings, otherwise, Windows will block the registry modifications.
 
 1. Go to **Settings** > **Privacy & security** > **Windows Security** > **Virus & threat protection**.
 2. Click **Manage settings**.
@@ -25,7 +25,7 @@ Before running this script, you **MUST** manually disable Tamper Protection in t
 
 ### Quick Execution
 
-Open an elevated PowerShell window (Run as Administrator) and paste the following command to download and execute the script directly in memory:
+Open an elevated PowerShell window **(Run as Administrator)** and paste the following command to download and execute the script directly in memory:
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; $w=New-Object Net.WebClient; $w.Encoding=[System.Text.Encoding]::UTF8; iex $w.DownloadString("https://raw.githubusercontent.com/bhardwaj-23/WIN-STRIP/main/WIN-STRIP.ps1")
